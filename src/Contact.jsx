@@ -33,8 +33,8 @@ const Contact = () => {
     ////// FORMULARIO - EMAILJS/////
 
     return (
-        <><ContainerSectionForm>
-            <form ref={form} onSubmit={sendEmail}>
+        <><ContainerSectionForm >
+            <form ref={form} onSubmit={sendEmail}id="contact">
                 <label>Nombre</label>
                 <input type="text" name="name" required />
 

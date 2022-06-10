@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import styled, { css, keyframes } from "styled-components"
 import GlobalColor from "./components/GlobalColors";
     //Estilos del Contenedor Principal
@@ -135,7 +136,7 @@ import GlobalColor from "./components/GlobalColors";
             opacity: 1;
         }
   `;
-    const ButtonContactMe = styled.a`
+    const ButtonContactMe = styled(Link)`
         padding: 1rem 2rem;
         word-spacing: .1rem;
         margin: 2rem;
@@ -149,6 +150,7 @@ import GlobalColor from "./components/GlobalColors";
         animation-name: ${AnimationLink};
         animation-duration: .7s;
         animation-fill-mode: both;
+        cursor: pointer;
         &:hover{
             background-color: ${GlobalColor.fourth};
             color: ${GlobalColor.primary};
@@ -171,7 +173,12 @@ const Portada = () => {
                         <MyName>Maycon Antony.</MyName>
                         <Employment>Front-End developer</Employment>
                         <DescriptionJob>I'm a software engineer specializing in front end develop, UX/UI design and programming.</DescriptionJob>
-                        <ButtonContactMe href="/">Contact Me</ButtonContactMe>
+                        <ButtonContactMe 
+                        to="contact" 
+                        spy={true} 
+                        smooth={true} 
+                        duration={1000}
+                        delay={200}>Contact Me</ButtonContactMe>
                     </ContainerTitle>
                     <ContainerVoid />
                 </Container>
