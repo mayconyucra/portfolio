@@ -6,10 +6,10 @@ import GlobalColor from "./GlobalColors";
    
     *{
         padding: 0;
-        margin: 0;
+        margin: 0;        
+        box-sizing: border-box;
     }
     body{
-        position: relative;
         background: url(${Portada});
         background-position: center center;
         background-repeat: no-repeat;
@@ -19,11 +19,11 @@ import GlobalColor from "./GlobalColors";
         font-family: "Roboto","Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        box-sizing: border-box;
+
         &::before{
             content: "";
             width: 100%;
-            position: absolute;
+            position: fixed;
             height: 100%;
             background: #0b132bb5;
         }

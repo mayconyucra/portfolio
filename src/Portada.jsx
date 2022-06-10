@@ -8,9 +8,7 @@ import GlobalColor from "./components/GlobalColors";
         display: flex;
         align-items: end;
         transition: 1s all;
-        @media screen and (max-width: 767px){
-            max-height: 100vh;
-        }
+        max-height: 100vh;
     `;
     //Estilos del Contenedor Principal
 
@@ -53,30 +51,31 @@ import GlobalColor from "./components/GlobalColors";
     ////Animaciones
     const Animation = keyframes`
         0%{
-            top: 120px;
             opacity: 0;
+            transform: translateY(120px);
         }
         100%{
-            top: 0;
             opacity: 1;
+            transform: translateY(0px);  
         }
     `;
     const AnimationStyle = css`
         animation-name: ${Animation};
         animation-duration: 1s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 2);
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1.1);
         animation-fill-mode: both;
-        position: relative; 
+        position: relative;
     `;
     ////Animaciones
 
     ///Estilos del Titulo General
     const NameTitle = styled.span`
+        display: block;
         color: ${GlobalColor.fifeth};
         letter-spacing: .1rem;
         word-spacing: .3rem;
         padding: .5rem 2rem;
-        ${AnimationStyle};
+        //${AnimationStyle};
         animation-delay: .4s;
         @media screen and (max-width: 767px){
             font-size: 14px;
@@ -88,7 +87,7 @@ import GlobalColor from "./components/GlobalColors";
         font-size: 64px;
         letter-spacing: .3rem;
         padding: 1rem 2rem;
-        ${AnimationStyle};  
+        //${AnimationStyle};  
         animation-delay: .5s;
         @media screen and (max-width: 767px){
             font-size: 46px;
@@ -101,7 +100,7 @@ import GlobalColor from "./components/GlobalColors";
         letter-spacing: .2rem;
         padding: 0 2rem;
         font-style: italic; 
-        ${AnimationStyle}; 
+        //${AnimationStyle}; 
         animation-delay: .6s;
         @media screen and (max-width: 767px){
             font-size: 18px;
@@ -115,7 +114,7 @@ import GlobalColor from "./components/GlobalColors";
         letter-spacing: .05rem;
         padding: 0 2rem;
         margin: 1rem 0;
-        ${AnimationStyle}; 
+       // ${AnimationStyle}; 
         animation-delay: .7s;     
        
         @media screen and (max-width: 767px){
@@ -145,7 +144,7 @@ import GlobalColor from "./components/GlobalColors";
         text-decoration: none;
         color: ${GlobalColor.fifeth};
         border-radius: 10px;
-        transition: .3s all ease-in-out;
+        transition: .3s;
         animation-delay: 2s;
         animation-name: ${AnimationLink};
         animation-duration: .7s;
