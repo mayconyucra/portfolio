@@ -20,6 +20,12 @@ const ContainerForm = styled.div`
     border: 1px solid ${GlobalColor.secondary};
     box-shadow:2px 2px 10px ${GlobalColor.secondary};
     border-radius: 10px;
+    @media screen and (min-width: 768px ) and (max-width: 1023px){
+        max-width: 90vw;
+    }
+    @media screen and (max-width: 767px){
+        max-width: 90vw;
+    }
 `;
 ///  Contenedor del formulario///
 
@@ -29,6 +35,14 @@ const TextSendMe = styled.h1`
     font-size: 36px;
     margin-bottom: 2rem;
     letter-spacing: .1rem;
+    @media screen and (min-width: 768px ) and (max-width: 1023px){
+        font-size: 30px;
+        margin-bottom: 1.3rem;
+    }
+    @media screen and (max-width: 767px){
+        font-size: 26px;
+        margin-bottom: 1.2rem;
+    }
 `;
 ///  Texto SendME///
 
@@ -40,6 +54,14 @@ const SpanText = styled.span`
     color: ${GlobalColor.paragraph};
     letter-spacing: .1rem;
     display: block;
+    @media screen and (min-width: 768px ) and (max-width: 1023px){
+        font-size: 15px;
+        margin: .7rem;
+    }
+    @media screen and (max-width: 767px){
+        font-size: 13px;
+        margin: .6rem;
+    }
 `;
 ///  Texto Random///
 
@@ -51,14 +73,32 @@ const ContainerNameEmail = styled.div`
     width: 100%;
     display: flex;
     margin-top: 1rem;
+    @media screen and (min-width: 768px ) and (max-width: 1023px){
+        flex-direction: column;
+    }
+    @media screen and (max-width: 767px){
+        flex-direction: column;
+    }
 `;
 const ContainerName = styled.div`
     width: 50%;
     padding: 0 1rem;
+    @media screen and (min-width: 768px ) and (max-width: 1023px){
+        width: 100%;
+    }
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
 `;
 const ContainerEmail = styled.div`
     width: 50%;
     padding: 0 1rem;
+    @media screen and (min-width: 768px ) and (max-width: 1023px){
+        width: 100%;
+    }
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
 `;
 const ContainerMessage = styled.div`
     width: 100%;
@@ -78,6 +118,12 @@ const InputStyle = css`
     padding: 1.5rem;
     &::placeholder{
         color: ${GlobalColor.fourth};
+    }    
+    @media screen and (max-width: 767px){
+        padding: 1.3rem;
+        margin: .7rem 0;
+        font-size: smaller;
+        border-bottom: 1px solid ${GlobalColor.fifeth};
     }
 `;
 const Input = styled.input`
@@ -116,10 +162,12 @@ const ButtonSend = styled.input`
         background-color: ${GlobalColor.fourth};
         color: ${GlobalColor.primary};
     }
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
 `;
 ///Boton Enviar Formulario///
 
-///  Estilos del Formulario///
 const Contact = () => {
 
     ////// FORMULARIO - EMAILJS/////
