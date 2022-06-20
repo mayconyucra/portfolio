@@ -17,8 +17,7 @@ const ContainerForm = styled.div`
     margin: 0 auto;
     padding: 2rem 1rem; 
     background-color: ${GlobalColor.secondary};
-    border: 1px solid ${GlobalColor.secondary};
-    box-shadow:2px 2px 10px ${GlobalColor.secondary};
+    box-shadow: 0 0 40px 2px ${GlobalColor.primary};
     border-radius: 10px;
     @media screen and (min-width: 768px ) and (max-width: 1023px){
         max-width: 90vw;
