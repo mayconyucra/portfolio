@@ -1,7 +1,9 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import styled,{css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import GlobalColor from './components/GlobalColors';
+import { IoCall, IoMailSharp } from "react-icons/io5";
+import { SiGooglemaps } from "react-icons/si";
 
 ///  Contenedor de la seccion formulario///
 const ContainerSectionForm = styled.section`
@@ -11,9 +13,9 @@ const ContainerSectionForm = styled.section`
 `;
 ///  Contenedor de la seccion formulario///
 
-///  Contenedor del formulario///
+///  Contenedor del formulario general///
 const ContainerForm = styled.div`
-    max-width: 70vw;
+    max-width: 80vw;
     margin: 0 auto;
     padding: 2rem 1rem; 
     background-color: ${GlobalColor.secondary};
@@ -26,7 +28,7 @@ const ContainerForm = styled.div`
         max-width: 90vw;
     }
 `;
-///  Contenedor del formulario///
+///  Contenedor del formulario general///
 
 ///  Texto SendME///
 const TextSendMe = styled.h1`
@@ -64,9 +66,59 @@ const SpanText = styled.span`
 `;
 ///  Texto Random///
 
-///  Estilos del Formulario///
-const FromStyles = styled.form`
+///  Contenedor Iconos - Formulario///
+const ContainerIconsAndForm = styled.div`
+    display: flex;
+    width: 100%;
+`;
+///  Contenedor Iconos - Formulario///
+
+///  Contenedor Iconos y Datos de Contacto///
+const ContainerIconsDate = styled.div`
+    width: 35%;
     margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+///  Contenedor Iconos y Datos de Contacto///
+
+///  Contenedor Iconos y Datos de Contacto Especifico///
+const ContainerIcons = styled.div`
+    padding: 1rem 0;
+`;
+///  Contenedor Iconos y Datos de Contacto Especifico///
+
+///  Estilos de Iconos y Datos de Contacto Especifico///
+const StyleIcons = css`
+    font-size: 2rem;
+    color: ${GlobalColor.fifeth};
+`;
+const IconMaps = styled(SiGooglemaps)`
+    ${StyleIcons};
+`;
+const IconMail = styled(IoMailSharp)`
+    ${StyleIcons};
+`;
+const IconCall = styled(IoCall)`
+    ${StyleIcons};
+`;
+const TextDate = styled.span`
+    margin: auto 1rem;
+    font-size: medium;
+    color: ${GlobalColor.title};
+`;
+const ContainerIconAndDate = styled.div`
+    display: flex;
+    padding: .7rem 0;
+`;
+///  Estilos de Iconos y Datos de Contacto Especifico///
+
+
+///  Estilos del Formulario///
+const FormStyles = styled.form`
+    margin: 1rem 0;
+    width: 65%;
 `;
 const ContainerNameEmail = styled.div`
     width: 100%;
@@ -195,22 +247,34 @@ const Contact = () => {
                 <TextSendMe>Envíame un Mensaje</TextSendMe>
                 <SpanText>¿Tiene alguna pregunta o propuesta, o solo desea saludarme? :)</SpanText>
 
-                <FromStyles ref={form} onSubmit={sendEmail} >
-                    <ContainerNameEmail>
-                        <ContainerName>
-                            <Input type="text" name="name" required placeholder="Nombres y Apellidos" />
-                        </ContainerName>
-                        <ContainerEmail>
-                            <Input type="email" name="email" required placeholder="Su correo" />
-                        </ContainerEmail>
-                    </ContainerNameEmail>
-                    <ContainerMessage>
-                        <Textarea rows="5" name="message" required placeholder="Su mensaje" />
-                    </ContainerMessage>
-                    <ContainerButtonSend>
-                        <ButtonSend type="submit" value="Enviar" />
-                    </ContainerButtonSend>
-                </FromStyles>
+                <ContainerIconsAndForm>
+                    <ContainerIconsDate>
+                        <ContainerIcons>
+                            <ContainerIconAndDate><IconMaps/><TextDate>Puno, Perú</TextDate></ContainerIconAndDate>
+                            <ContainerIconAndDate><IconMail/><TextDate>mayconyucra@gmail.com</TextDate></ContainerIconAndDate>
+                            <ContainerIconAndDate><IconCall/><TextDate>+51 962 731 736</TextDate></ContainerIconAndDate>
+                        </ContainerIcons>
+                    </ContainerIconsDate>
+
+
+                    <FormStyles ref={form} onSubmit={sendEmail} >
+                        <ContainerNameEmail>
+                            <ContainerName>
+                                <Input type="text" name="name" required placeholder="Nombres y Apellidos" />
+                            </ContainerName>
+                            <ContainerEmail>
+                                <Input type="email" name="email" required placeholder="Su correo" />
+                            </ContainerEmail>
+                        </ContainerNameEmail>
+                        <ContainerMessage>
+                            <Textarea rows="5" name="message" required placeholder="Su mensaje" />
+                        </ContainerMessage>
+                        <ContainerButtonSend>
+                            <ButtonSend type="submit" value="Enviar" />
+                        </ContainerButtonSend>
+                    </FormStyles>
+
+                </ContainerIconsAndForm>
             </ContainerForm>
         </ContainerSectionForm>
         </>
