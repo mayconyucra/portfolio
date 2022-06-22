@@ -70,6 +70,9 @@ const SpanText = styled.span`
 const ContainerIconsAndForm = styled.div`
     display: flex;
     width: 100%;
+    @media screen and (max-width: 767px){
+        display: block;
+    }    
 `;
 ///  Contenedor Iconos - Formulario///
 
@@ -80,19 +83,39 @@ const ContainerIconsDate = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
 `;
 ///  Contenedor Iconos y Datos de Contacto///
 
 ///  Contenedor Iconos y Datos de Contacto Especifico///
 const ContainerIcons = styled.div`
     padding: 1rem 0;
+    @media screen and (max-width: 767px){
+        padding-bottom: 0;
+    }
 `;
 ///  Contenedor Iconos y Datos de Contacto Especifico///
 
-///  Estilos de Iconos y Datos de Contacto Especifico///
+///  Contenedor de Iconos y Datos de Contacto///
+const ContainerIconAndDate = styled.div`
+    display: flex;
+    padding: .7rem 0;
+    @media screen and (max-width: 767px){
+        padding-bottom: 0;
+    }
+`;
+///  Contenedor de Iconos y Datos de Contacto///
+
+///  Estilos de Iconos de Contacto Especifico///
 const StyleIcons = css`
     font-size: 2rem;
     color: ${GlobalColor.fifeth};
+    @media screen and (max-width: 767px){
+        font-size: 1rem;
+        margin: 0 .2rem;
+    }
 `;
 const IconMaps = styled(SiGooglemaps)`
     ${StyleIcons};
@@ -103,22 +126,29 @@ const IconMail = styled(IoMailSharp)`
 const IconCall = styled(IoCall)`
     ${StyleIcons};
 `;
+///Estilos de Iconos de Contacto Especifico///
+
+///Estilos de Texto de Datos de Contacto///
 const TextDate = styled.span`
     margin: auto 1rem;
     font-size: medium;
     color: ${GlobalColor.title};
+    letter-spacing: .1em;
+    @media screen and (max-width: 767px){
+        font-size: x-small;
+        margin: auto .2rem;
+    }
 `;
-const ContainerIconAndDate = styled.div`
-    display: flex;
-    padding: .7rem 0;
-`;
-///  Estilos de Iconos y Datos de Contacto Especifico///
+///Estilos de Texto de Datos de Contacto///
 
 
 ///  Estilos del Formulario///
 const FormStyles = styled.form`
     margin: 1rem 0;
     width: 65%;
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
 `;
 const ContainerNameEmail = styled.div`
     width: 100%;
@@ -168,7 +198,7 @@ const InputStyle = css`
     border-bottom: 2px solid ${GlobalColor.fifeth};
     padding: 1.5rem;
     &::placeholder{
-        color: ${GlobalColor.fourth};
+        color: ${GlobalColor.fifeth};
     }    
     @media screen and (max-width: 767px){
         padding: 1.3rem;
