@@ -109,22 +109,13 @@ const ContainerIconAndDate = styled.div`
 ///  Contenedor de Iconos y Datos de Contacto///
 
 ///  Estilos de Iconos de Contacto Especifico///
-const StyleIcons = css`
+const StyleIcons = styled.i`
     font-size: 2rem;
     color: ${GlobalColor.fifeth};
     @media screen and (max-width: 767px){
         font-size: 1rem;
         margin: 0 .2rem;
     }
-`;
-const IconMaps = styled(SiGooglemaps)`
-    ${StyleIcons};
-`;
-const IconMail = styled(IoMailSharp)`
-    ${StyleIcons};
-`;
-const IconCall = styled(IoCall)`
-    ${StyleIcons};
 `;
 ///Estilos de Iconos de Contacto Especifico///
 
@@ -280,9 +271,18 @@ const Contact = () => {
                 <ContainerIconsAndForm>
                     <ContainerIconsDate>
                         <ContainerIcons>
-                            <ContainerIconAndDate><IconMaps/><TextDate>Puno, Perú</TextDate></ContainerIconAndDate>
-                            <ContainerIconAndDate><IconMail/><TextDate>mayconyucra@gmail.com</TextDate></ContainerIconAndDate>
-                            <ContainerIconAndDate><IconCall/><TextDate>+51 962 731 736</TextDate></ContainerIconAndDate>
+                            <ContainerIconAndDate>
+                                <StyleIcons as={SiGooglemaps} />
+                                <TextDate>Puno, Perú</TextDate>
+                            </ContainerIconAndDate>
+                            <ContainerIconAndDate>
+                                <StyleIcons as={IoCall} />
+                                <TextDate>mayconyucra@gmail.com</TextDate>
+                            </ContainerIconAndDate>
+                            <ContainerIconAndDate>
+                                <StyleIcons as={IoMailSharp} />
+                                <TextDate>+51 962 731 736</TextDate>
+                            </ContainerIconAndDate>
                         </ContainerIcons>
                     </ContainerIconsDate>
 

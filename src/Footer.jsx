@@ -31,7 +31,7 @@ const ContainerIcons = styled.div`
 ///Contenedor de los Iconos
 
 ///Estilos de Iconos
-const BuutonIcons = styled.a`
+const ButtonIcons = styled.a`
     display: inline-flex;
     padding: .7rem;
     background-color: ${GlobalColor.secondary};
@@ -83,11 +83,11 @@ const Footer = () => {
         <ContainerFooter>
             <TextRandom>Every day something new is learned and many things are appreciated.</TextRandom>
             <ContainerIcons>
-                <BuutonIcons href="https://github.com/mayconyucra" target="_github"><SiGithub /></BuutonIcons>
-                <BuutonIcons href="https://pe.linkedin.com/in/maycon-yucra-avenda%C3%B1o-a9a552226" target="_linkedin"><SiLinkedin /></BuutonIcons>
-                <BuutonIcons href="https://fb.com/mayconyucra" target="_facebook"><SiFacebook /></BuutonIcons>
-                <BuutonIcons href="https://m.me/mayconyucra" target="_messenger"><SiMessenger /></BuutonIcons>
-                <BuutonIcons href="https://www.instagram.com/mayconyucra/" target="_instagram"><SiInstagram /></BuutonIcons>
+                <ButtonIcons href="https://github.com/mayconyucra" target="_github"><SiGithub /></ButtonIcons>
+                <ButtonIcons href="https://pe.linkedin.com/in/maycon-yucra-avenda%C3%B1o-a9a552226" target="_linkedin"><SiLinkedin /></ButtonIcons>
+                <ButtonIcons href="https://fb.com/mayconyucra" target="_facebook"><SiFacebook /></ButtonIcons>
+                <ButtonIcons href="https://m.me/mayconyucra" target="_messenger"><SiMessenger /></ButtonIcons>
+                <ButtonIcons href="https://www.instagram.com/mayconyucra/" target="_instagram"><SiInstagram /></ButtonIcons>
             </ContainerIcons>
             <TextCopyright>Handcrafted by me © - <span>Maycon</span> .</TextCopyright>
             <TextTechnology>Made with <SiReact /> & <SiStyledcomponents /> - v1.2</TextTechnology>

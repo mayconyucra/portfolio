@@ -142,7 +142,7 @@ const TextAboutMe = styled.p`
   word-spacing: .1rem;
   text-align: justify;
   line-height: 1.8rem;
-  p{
+  span{
     color: ${GlobalColor.fifeth};
     display: initial;
   }
@@ -182,11 +182,11 @@ const AboutMe = () => {
           <TextDescriptionContainer>
             <TitleAboutMe>Acerca de Mi</TitleAboutMe>
             <TextAboutMe>
-              Hola, mi nombre es <p>Maycon Antony</p>,
+              Hola, mi nombre es <span>Maycon Antony</span>,
               disfruto mucho
-              de la programación web Front End, diseño UX/UI, gestión de sistemas de información, bases de datos,
-              manejo y administración de sistemas gestores de contenido CMS, 
-              IoT, Machine Learning (IA). Apasionado por el
+              de la programación web Front-End, diseño UX/UI, gestión de sistemas de información,
+              manejo y administración de sistemas gestores de contenido CMS. 
+              Apasionado por el
               contínuo aprendizaje en nuevas tecnologías y el
               crecimiento profesional en diversas áreas.
               <br /> <br />

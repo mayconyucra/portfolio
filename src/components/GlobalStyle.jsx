@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import Portada from "../media/portada.jpg"
+import Portada from "../media/portada.png"
 import GlobalColor from "./GlobalColors";
     //Definicion de estilos globales///
     const GlobalStyles = createGlobalStyle`

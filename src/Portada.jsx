@@ -168,10 +168,10 @@ const Portada = () => {
             <PortadaPrincipal>
                 <Container>
                     <ContainerTitle>
-                        <NameTitle>Hi, my name is</NameTitle>
+                        <NameTitle>Hola! Mi nombre es</NameTitle>
                         <MyName>Maycon Antony.</MyName>
-                        <Employment>Front-End developer</Employment>
-                        <DescriptionJob>I'm a software engineer specializing in front end develop, UX/UI design and programming.</DescriptionJob>
+                        <Employment>Bachiller en Ciencias de la Ingeniería de Sistemas</Employment>
+                        <DescriptionJob>Especializado en la programación Front-End y CMS Managment</DescriptionJob>
                         <ButtonContactMe 
                         to="contact" 
                         spy={true} 
