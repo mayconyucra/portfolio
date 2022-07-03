@@ -22,7 +22,10 @@ import { FaElementor } from "react-icons/fa";
 const SectionSkills = styled.section`
     position: relative;
     color: ${GlobalColor.title};
-    padding: 4rem 0;
+    padding: 2rem 0;
+    @media screen and (max-width: 767px){
+        padding: .5rem 0;
+    }
 `;
 /// Section Skills///
 
@@ -31,6 +34,9 @@ const ContainerSkills = styled.div`
     max-width: 80vw;
     margin: 0 auto;
     padding: 2rem 0;
+    @media screen and (max-width: 767px){
+        max-width: 95vw;
+    }
 `;
 /// Container Skils///
 
@@ -85,17 +91,24 @@ const ContainerIcons = styled.div`
 /// Contenedor de Iconos General///
 
 /// Div de icono y Titulo///
+const SizeBox = "10.5rem";
+const ResponsiveBox = "8rem";
 const BoxIconandTitle = styled.div`
     display: block;
-    width: 10.5rem;
-    max-width: 10.5rem;
-    min-width: 10.5rem;
+    width: ${SizeBox};
+    max-width: ${SizeBox};
+    min-width: ${SizeBox};
     background-color: ${GlobalColor.secondary};
     box-shadow: 0 0 40px 2px ${GlobalColor.primary};
     border-radius: 10px;
-    margin: .5rem 1rem;
+    margin: 1rem;
     text-align: center;
     padding-top: 1rem;
+    @media screen and (max-width: 767px){
+        width: ${ResponsiveBox};
+        max-width: ${ResponsiveBox};
+        min-width: ${ResponsiveBox};
+    }
 `;
 /// Div de icono y Titulo///
 
@@ -172,6 +185,9 @@ const StyledIconos = styled.i`
     font-size: 2.5rem;
     display: block;
     margin: .5rem auto;
+    @media screen and (max-width: 767px){
+        font-size: 2rem;
+    }
 `;
 const TituloIcons = styled.span`
     display: block;
@@ -180,6 +196,9 @@ const TituloIcons = styled.span`
     padding: 0;
     font-size: medium;
     padding: .5rem 1rem;
+    @media screen and (max-width: 767px){
+        font-size: smaller;
+    }
 `;
 /// Iconos y Titulo///
 const Skills = () => {
