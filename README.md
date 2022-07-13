@@ -23,4 +23,5 @@ En la version 1.2 se modifica componentes y se implementa
 
 Se implementa  
 ### `Skills & Tools`
+### `Portafolio de Proyectos`
 

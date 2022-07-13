@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components"
 import GlobalColor from "./components/GlobalColors";
 import Perfil from "./media/perfil.png";
+import Titulo from "./props/Titulo";
 
 /// Contenedor general - AboutMe ////
 const ContainerAboutMe = styled.section`
@@ -113,23 +114,6 @@ const TextDescriptionContainer = styled.div`
 `;
 /// Contenedor Descripcion - AboutMe ////
 
-/// Titulo AboutMe ////
-const TitleAboutMe = styled.h1`
-  color: ${GlobalColor.title};
-  word-spacing: .1rem;
-  letter-spacing: .1rem;
-  padding: 0 2rem;
-  font-size: 36px;
-  @media screen and (min-width: 768px ) and (max-width: 1023px){
-    padding: 0 .5rem;
-    text-align: center;
-  }
-  @media screen and (max-width: 767px){
-    font-size: 26px;
-    text-align: center;
-  }
-`;
-/// Titulo AboutMe ////
 
 /// Texto AboutMe ////
 const TextAboutMe = styled.p`
@@ -180,7 +164,7 @@ const AboutMe = () => {
             </ImagenContainer>
           </PerfilImgContainer>
           <TextDescriptionContainer>
-            <TitleAboutMe>Acerca de Mi</TitleAboutMe>
+            <Titulo posicion="start" titulo="Acerca de Mí"/>
             <TextAboutMe>
               Hola, mi nombre es <span>Maycon Antony</span>,
               disfruto mucho

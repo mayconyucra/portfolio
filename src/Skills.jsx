@@ -17,6 +17,7 @@ import {
     SiFigma,
 } from "react-icons/si";
 import { FaElementor } from "react-icons/fa";
+import Titulo from './props/Titulo';
 
 /// Section Skills///
 const SectionSkills = styled.section`
@@ -40,24 +41,7 @@ const ContainerSkills = styled.div`
 `;
 /// Container Skils///
 
-/// Titulo - Skills ///
-const TitleSkills = styled.h1`
-    text-align: center;
-    font-size: 36px;
-    letter-spacing: .1rem;
-    padding: 1rem 0;
-    span{
-        color: ${GlobalColor.fifeth};
-    }
-    @media screen and (min-width: 768px ) and (max-width: 1023px){
-        font-size: 30px;
-        padding: .5rem 0;
-    }
-    @media screen and (max-width: 767px){
-        font-size: 26px;
-        padding: .5rem 0;
-    }
-`;
+
 /// Titulo - Skills ///
 
 /// Texto - Skills///
@@ -206,9 +190,7 @@ const Skills = () => {
         <>
             <SectionSkills>
                 <ContainerSkills>
-                    <TitleSkills>
-                        Habilidades <span>&</span> Herramientas
-                    </TitleSkills>
+                    <Titulo posicion="center" titulo ="Habilidades y Herramientas"/>
                     <TextSkills>
                         Mis habilidades, herramientas y tecnologias que utilizo.
                     </TextSkills>

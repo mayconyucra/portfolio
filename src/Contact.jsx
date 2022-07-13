@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 import GlobalColor from './components/GlobalColors';
 import { IoCall, IoMailSharp } from "react-icons/io5";
 import { SiGooglemaps } from "react-icons/si";
+import Titulo from './props/Titulo';
 
 ///  Contenedor de la seccion formulario///
 const ContainerSectionForm = styled.section`
@@ -19,7 +20,7 @@ const ContainerForm = styled.div`
     margin: 0 auto;
     padding: 2rem 1rem; 
     background-color: ${GlobalColor.secondary};
-    box-shadow: 0 0 40px 2px ${GlobalColor.primary};
+    box-shadow: 0 0 70px 8px ${GlobalColor.primary};
     border-radius: 10px;
     @media screen and (min-width: 768px ) and (max-width: 1023px){
         max-width: 90vw;
@@ -29,23 +30,6 @@ const ContainerForm = styled.div`
     }
 `;
 ///  Contenedor del formulario general///
-
-///  Texto SendME///
-const TextSendMe = styled.h1`
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 2rem;
-    letter-spacing: .1rem;
-    @media screen and (min-width: 768px ) and (max-width: 1023px){
-        font-size: 30px;
-        margin-bottom: 1.3rem;
-    }
-    @media screen and (max-width: 767px){
-        font-size: 26px;
-        margin-bottom: 1.2rem;
-    }
-`;
-///  Texto SendME///
 
 ///  Texto Random///
 const SpanText = styled.span`
@@ -265,7 +249,7 @@ const Contact = () => {
     return (
         <><ContainerSectionForm id="contact">
             <ContainerForm>
-                <TextSendMe>Envíame un Mensaje</TextSendMe>
+                <Titulo posicion="center" titulo="Envíame un Mensaje"/>
                 <SpanText>¿Tiene alguna pregunta o propuesta, o solo desea saludarme? :)</SpanText>
 
                 <ContainerIconsAndForm>

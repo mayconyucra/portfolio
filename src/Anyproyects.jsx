@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import GlobalColor from "./components/GlobalColors";
+import Titulo from "./props/Titulo";
 const BackgroundStyled = styled.div`
     position: relative;
     background-color: ${GlobalColor.primary};
@@ -9,21 +10,6 @@ const BackgroundStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-`;
-const TextPrueba = styled.h1`
-    text-align: center;
-    color: ${GlobalColor.title};
-    font-size: 36px;
-    letter-spacing: .1rem;
-    padding: 1rem 0;
-    @media screen and (min-width: 768px ) and (max-width: 1023px){
-        font-size: 30px;
-        padding: .5rem 0;
-    }
-    @media screen and (max-width: 767px){
-        font-size: 26px;
-        padding: .5rem 0;
-    }
 `;
 /// Separadores Clip Path////
 const ClipPath = styled.div`    
@@ -42,9 +28,7 @@ const Anyproyects = () => {
         <>
             <ClipPath StringPath="polygon(72.8% 35.8%, 100% 0%, 100% 100%, 0% 100%, 16.6% 26.3%);" />
             <BackgroundStyled>
-                <TextPrueba>
-                    Still Building :)
-                </TextPrueba>
+                <Titulo posicion ="center" titulo="Algunos de mis Proyectos...(en construcción ...)"/>
             </BackgroundStyled>
             <ClipPath StringPath="polygon(100% 0, 88% 80%, 27% 30%, 0 100%, 0 0);" />
         </>

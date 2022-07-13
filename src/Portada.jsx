@@ -177,7 +177,7 @@ const Portada = () => {
                         spy={true} 
                         smooth={true} 
                         duration={1000}
-                        delay={200}>Contact Me</ButtonContactMe>
+                        delay={200}>Contactar</ButtonContactMe>
                     </ContainerTitle>
                     <ContainerVoid />
                 </Container>
