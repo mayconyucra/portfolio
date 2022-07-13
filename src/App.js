@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe"
 import Skills from "./Skills"
 import Contact from "./Contact"
 import Footer from "./Footer"
+import Anyproyects from "./Anyproyects"
 const App = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const App = () => {
       <Portada/>
       <AboutMe/>
       <Skills/>
+      <Anyproyects/>
       <Contact/>      
       <Footer/>
     </>

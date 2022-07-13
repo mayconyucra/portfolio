@@ -277,11 +277,11 @@ const Contact = () => {
                             </ContainerIconAndDate>
                             <ContainerIconAndDate>
                                 <StyleIcons as={IoCall} />
-                                <TextDate>mayconyucra@gmail.com</TextDate>
+                                <TextDate>+51 962 731 736</TextDate>
                             </ContainerIconAndDate>
                             <ContainerIconAndDate>
                                 <StyleIcons as={IoMailSharp} />
-                                <TextDate>+51 962 731 736</TextDate>
+                                <TextDate>mayconyucra@gmail.com</TextDate>
                             </ContainerIconAndDate>
                         </ContainerIcons>
                     </ContainerIconsDate>
