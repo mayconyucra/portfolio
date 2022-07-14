@@ -24,11 +24,11 @@ import GlobalColor from "./GlobalColors";
             width: 100%;
             position: fixed;
             height: 100%;
-            background: #000000d5;
+            background: #0000009b;
         }
     }
     body::-webkit-scrollbar{
-      width: 10px;
+      width: 5px;
       background-color: ${GlobalColor.primary};
     }
     body::-webkit-scrollbar-thumb{
