@@ -19,7 +19,6 @@ import GlobalColor from "./GlobalColors";
         font-family: "Roboto","Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
         &::before{
             content: "";
             width: 100%;
