@@ -1,11 +1,11 @@
 //Paleta de Colores
 const GlobalColor = {
-    primary: "#0b132b",
-    secondary: "#1c2541",
-    third:"#3a506b",
-    fourth:"#5bc0be",
-    fifeth:"#6fffe9",
-    title:"#d3daf1",
+    primary: "rgba(0, 0, 0, 0.733)",
+    secondary: "rgba(15, 23, 48, 0.575)",
+    third:"#54e4f7",
+    fourth:"#6bdddb",
+    fifeth:"#0affda",
+    title:"#ffffff",
     paragraph:"#8890a7"
 };
 export default GlobalColor;

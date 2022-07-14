@@ -110,7 +110,7 @@ const TextDate = styled.span`
     color: ${GlobalColor.title};
     letter-spacing: .1em;
     @media screen and (max-width: 767px){
-        font-size: x-small;
+        font-size: smaller;
         margin: auto .2rem;
     }
 `;

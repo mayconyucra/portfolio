@@ -25,7 +25,7 @@ import GlobalColor from "./GlobalColors";
             width: 100%;
             position: fixed;
             height: 100%;
-            background: #0b132bb5;
+            background: #000000c7;
         }
     }
     body::-webkit-scrollbar{
