@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import GlobalColor from './components/GlobalColors';
 import {
     SiHtml5,
@@ -75,6 +75,14 @@ const ContainerIcons = styled.div`
 /// Contenedor de Iconos General///
 
 /// Div de icono y Titulo///
+const EfectGlowing = keyframes`
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+`;
 const SizeBox = "10.5rem";
 const ResponsiveBox = "8rem";
 const BoxIconandTitle = styled.div`
@@ -82,12 +90,23 @@ const BoxIconandTitle = styled.div`
     width: ${SizeBox};
     max-width: ${SizeBox};
     min-width: ${SizeBox};
-    background-color: ${GlobalColor.secondary};
-    box-shadow: 0 0 40px 2px ${GlobalColor.primary};
+    background-color: ${GlobalColor.primary};
+    box-shadow: 
+      inset 0 0 10px ${GlobalColor.third},
+      0 0 20px ${GlobalColor.primary},
+      inset 0 0 5px ${GlobalColor.fourth},
+      0 0 20px ${GlobalColor.third},
+      inset 0 0 5px ${GlobalColor.secondary};
+    text-shadow: 
+      0 0 20px ${GlobalColor.secondary},
+      0 0 20px ${GlobalColor.secondary},
+      0 0 20px ${GlobalColor.secondary},
+      0 0 20px ${GlobalColor.secondary};
     border-radius: 10px;
     margin: 1rem;
     text-align: center;
     padding-top: 1rem;
+    animation: ${EfectGlowing} 5s linear infinite;
     @media screen and (max-width: 767px){
         width: ${ResponsiveBox};
         max-width: ${ResponsiveBox};

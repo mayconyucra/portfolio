@@ -209,7 +209,7 @@ const ButtonSend = styled.input`
     margin-top: 1rem;
     border: 2px solid ${GlobalColor.fifeth};
     padding: 1rem 2rem;
-    border-radius: 5px;
+    border-radius: 30px;
     color: ${GlobalColor.fifeth};
     letter-spacing: .1rem;
     transition: .5s;
