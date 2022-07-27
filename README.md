@@ -25,3 +25,6 @@ Se implementa
 ### `Skills & Tools`
 ### `Portafolio de Proyectos`
 
+y se cambia a
+### `Vite`
+
